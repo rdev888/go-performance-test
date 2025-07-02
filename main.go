@@ -12,6 +12,14 @@ func main() {
 	queue.Enqueue(2)
 	queue.Enqueue(3)
 
+	stack := DataStructures.Stack{}
+	stack.Push(1)
+	stack.Push(2)
+	stack.Push(3)
+
+	fmt.Println(stack.Pop())
+	fmt.Println(stack.Pop())
+	fmt.Println(stack.Pop())
 	fmt.Println(queue.Peek())
 	fmt.Println(runtime.NumCPU())
 }
